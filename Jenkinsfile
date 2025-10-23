@@ -9,12 +9,12 @@ pipeline{
         }
         stage ('Compilar ') {
             steps {
-                sh echo " Compilando el proyecto ..." 
+                sh 'echo " Compilando el proyecto ..." '
             }
         }
         stage ( 'Pruebas' ) {
             steps {
-                sh echo " Ejecutando pruebas ..." 
+                sh 'echo " Ejecutando pruebas ..." '
             }
         }
     }
