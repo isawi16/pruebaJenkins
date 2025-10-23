@@ -4,7 +4,7 @@ pipeline{
     stages {
         stage('Clonar codigo') {
             steps {
-                git 'https://github.com/isawi16/pruebaJenkins.git'
+                git branch: 'main', url: 'https://github.com/isawi16/pruebaJenkins.git'
             }
         }
         stage ('Compilar ') {
