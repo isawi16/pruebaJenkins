@@ -11,7 +11,8 @@ pipeline{
             steps {
                 sh echo " Compilando el proyecto ..." 
             }
-        }stage ( 'Pruebas' ) {
+        }
+        stage ( 'Pruebas' ) {
             steps {
                 sh echo " Ejecutando pruebas ..." 
             }
